@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Naive Bayes Demo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="main">
+    <div>
+      <h1>Breast cancer diagnosis</h1>
+      <form action="{{ url_for('predict') }}" method="POST">
+        <label for="mean_radius">Mean radius:</label>
+        <input type="text" id="mean_radius" name="mean_radius" /><br />
+
+        <label for="mean_texture">Mean texture:</label>
+        <input type="text" id="mean_texture" name="mean_texture" /><br />
+
+        <label for="mean_smoothness">Mean smoothness:</label>
+        <input type="text" id="mean_smoothness" name="mean_smoothness" /><br />
+
+        <input type="submit" value="Predict" />
+      </form>
+    </div>
+  </body>
+</html>
