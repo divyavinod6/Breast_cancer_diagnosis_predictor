@@ -48,8 +48,11 @@ input[type='submit']:hover {
   background-color: #3e8e41;
 }
 .main {
-  background-image: linear-gradient(to right, #ff69b4, #ffc0cb);
+  background-image: linear-gradient(to right, #e30b5c, #f88379, #ffb6c1);
 }
 .result {
   text-align: center;
+}
+.subMain {
+  margin-top: 80px;
 }
