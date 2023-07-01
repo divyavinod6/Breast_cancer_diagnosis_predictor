@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Naive Bayes Demo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/support">Support</a></li>
+        <li class="dropdown">
+          <a href="#">Topics</a>
+          <ul class="dropdown-menu">
+            <li><a href="/work">How It Works</a></li>
+            <li><a href="#">More Topics</a></li>
+          </ul>
+        </li>
+        <li class="icon"></li>
+      </ul>
+    </div>
+
+    <div class="container-work">
+      <div class="row">
+        <div class="col">
+          <h1 style="color: #030813">HOW THIS WORKS</h1>
+          <h2>
+            We have used Naice Bayes classification to train our model.<br /><br />
+
+            Naive Bayes classification can be used to predict whether a given
+            patient has malignant (cancerous) or benign (non-cancerous) breast
+            tumors based on certain features or attributes.
+            <br /><br />
+            The dataset is prepared, consisting of labeled examples of breast
+            tumor data. Each example includes several features or attributes of
+            the tumor, such as its size, shape, texture, and other
+            characteristics, along with the corresponding label indicating
+            whether it is malignant or benign.
+            <br /><br />
+            The performance of the this Naive Bayes classifier is evaluated
+            using splitting the dataset into training and testing sets and has
+            aquired accuracy of <b>97.5%</b><br />
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Add your JavaScript code and additional content here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b136e9d192.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.dropdown').click(function () {
+          $(this).toggleClass('open');
+        });
+
+        $('.dropdown-menu').click(function (e) {
+          e.stopPropagation(); // Prevents the click event from propagating to the parent element (dropdown)
+        });
+      });
+    </script>
+  </body>
+</html>

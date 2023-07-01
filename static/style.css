@@ -117,3 +117,63 @@ input[type='submit']:hover {
   height: 25px;
   background-size: contain;
 }
+/* about */
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+
+.col img {
+  width: 100%; /* Change the width value as per your requirement */
+  height: auto;
+}
+
+.col h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.col p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* support */
+#support {
+  background-color: #c80c5d;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 5% auto; /* Center the support section */
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-size: 28px; /* Increase the size of social links */
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li a i {
+  color: #555555;
+}
+/* working */
+.container-work {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}

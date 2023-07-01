@@ -25,6 +25,16 @@ def predict():
     # return the prediction to the user
     return render_template('result.html', diagnosis=Y_pred[0])
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/support')
+def support():
+    return render_template('support.html')
+@app.route('/work')
+def work():
+    return render_template('work.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
