@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  background-image: url(bgPic.jpg);
   margin: 0;
   padding: 0;
 }
@@ -47,12 +48,72 @@ input[type='submit'] {
 input[type='submit']:hover {
   background-color: #3e8e41;
 }
-.main {
-  background-image: linear-gradient(to right, #e30b5c, #f88379, #ffb6c1);
-}
 .result {
   text-align: center;
 }
-.subMain {
-  margin-top: 80px;
+.navbar {
+  background-color: #313f4e;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 15px;
+}
+
+.navbar-menu li:last-child {
+  margin-right: 0;
+}
+
+.navbar-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-menu li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #313f4e;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+}
+.dropdown-menu li {
+  margin-right: 15px;
+  cursor: default;
+  text-decoration: none;
+}
+.icon {
+  margin-left: 78%;
+  background-image: url(iconPic.jpeg);
+  width: 35px;
+  height: 25px;
+  background-size: contain;
 }
