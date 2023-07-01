@@ -9,6 +9,23 @@
     />
   </head>
   <body class="main">
+    <div class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Support</a></li>
+        <li class="dropdown">
+          <a href="#">Topics</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Another Topic</a></li>
+            <li><a href="#">More Topics</a></li>
+          </ul>
+        </li>
+        <li class="icon"></li>
+      </ul>
+    </div>
+
     <div class="result">
       <h1>Naive Bayes Demo</h1>
       <p>Predicted diagnosis: {{ diagnosis }}</p>
